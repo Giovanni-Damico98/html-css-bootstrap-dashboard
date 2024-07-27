@@ -1,0 +1,21 @@
+/* UTILS */
+.text-light-gray {
+  color: gray !important;
+}
+/* HEADER */
+header img {
+  height: 50px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar button {
+  border-color: white;
+}
+
+.btn-outline-success {
+  --bs-btn-hover-border-color: white !important;
+  --bs-btn-hover-bg: lightgray !important;
+}
