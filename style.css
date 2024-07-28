@@ -67,3 +67,20 @@ header img {
 .table button:active {
   scale: 1.2;
 }
+
+/* SEZIONE TO-DO */
+
+.todo-div {
+  padding: 15px;
+  border-radius: 0.5rem;
+  border: solid 2px lightgray;
+}
+
+.todo-title {
+  background-color: lightgray;
+  width: 100%;
+  border-bottom: solid 2px lightgrey;
+}
+
+.list-group {
+}
