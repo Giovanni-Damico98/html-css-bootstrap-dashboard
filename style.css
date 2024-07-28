@@ -19,3 +19,51 @@ header img {
   --bs-btn-hover-border-color: white !important;
   --bs-btn-hover-bg: lightgray !important;
 }
+
+/* SEZIONE CATALOGO */
+.add-button {
+  border: solid 1px white;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.add-button:active {
+  scale: 1.1;
+}
+
+.available {
+  padding: 3px 3px;
+  background-color: #198754;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.borrowed {
+  padding: 3px 3px;
+  background-color: #ffc107;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.not-available {
+  padding: 3px 3px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.table button {
+  border-radius: 0.5rem;
+  color: gray;
+  border: solid 1px grey;
+}
+
+.table button:hover {
+  scale: 1.1;
+}
+
+.table button:active {
+  scale: 1.2;
+}
