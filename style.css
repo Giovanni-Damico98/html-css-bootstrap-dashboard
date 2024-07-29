@@ -76,7 +76,7 @@ header img {
 }
 
 .todo-title {
-  background-color: lightgray;
+  background-color: #ebebeb;
   width: 100%;
   border-bottom: solid 2px lightgrey;
 }
@@ -89,7 +89,7 @@ header img {
 }
 
 .accordion-title {
-  background-color: lightgray;
+  background-color: #ebebeb;
 }
 
 /* ADD-BOOK.HTML */
