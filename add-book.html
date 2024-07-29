@@ -17,6 +17,168 @@
     crossorigin="anonymous"
   />
   <body>
+    <!-- HEADER -->
+    <header class="container-fluid bg-dark d-flex">
+      <div><img src="img/duck_360.png" alt="" class="m-2" /></div>
+      <!-- NAVBAR -->
+      <nav
+        class="navbar navbar-expand-lg bg-dark d-flex justify-content-lg-between justify-content-md-end justify-content-end"
+      >
+        <div class="d-flex">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            data-bs-theme="dark"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Catalogo Libri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light-gray"
+                  aria-current="page"
+                  href="#"
+                  >Anagrafica Utenti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-gray" href="#"
+                  >Storico Prestiti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-gray" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fine NAVBAR -->
+    </header>
+    <!-- SEZIONE FORM -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 class="fs-4 my-4 px-3">Nuovo Libro</h1>
+          <form class="d-flex flex-wrap">
+            <div class="col-6 mb-3 px-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Nome Autore</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Inserisci il nome dell'autore"
+              />
+            </div>
+            <div class="col-6 mb-3 pe-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Cognome Autore</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Inserisci il cognome dell'autore"
+              />
+            </div>
+            <div class="col-12 mb-3 px-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Titolo</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Inserisci il titolo del libro"
+              />
+              <div id="emailHelp" class="form-text">
+                Titolo versione italiana
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3 px-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Genere</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Scegli il genere</option>
+                <option value="1">Fantasy</option>
+                <option value="2">Horror</option>
+                <option value="3">Thriller</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 mb-3 px-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Anno di pubblicazione</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Inserisci l'anno"
+              />
+            </div>
+            <div class="col-12 col-lg-4 px-3 mb-5">
+              <label for="exampleInputPassword1" class="form-label"
+                >ISBN#</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Inserisci il codice ISBN#"
+              />
+            </div>
+
+            <hr class="w-100 mx-3 mb-5" />
+
+            <div class="w-100 px-3 mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
+            </div>
+
+            <div class="w-100 mx-3 mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Disponibile anche in digitale</label
+              >
+            </div>
+
+            <button type="submit" class="add-button mx-3 btn btn-primary">
+              Aggiungi Libro
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- SCRIPT JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
