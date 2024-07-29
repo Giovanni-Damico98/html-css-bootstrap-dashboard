@@ -89,9 +89,9 @@
     </header>
     <!-- SEZIONE CATALOGO -->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <!-- Titolo + Bottone -->
-        <div class="col-12 col-lg-8 d-flex justify-content-between mt-4 mb-4">
+        <div class="col-10 col-lg-10 d-flex justify-content-between mt-4 mb-4">
           <span class="fw-medium fs-4">Catalogo Libri</span>
           <a
             href="add-book.html"
@@ -100,11 +100,14 @@
           >
         </div>
         <!-- Tabella Libri -->
-        <div class="col-12 col-lg-8">
-          <table class="table table-hover mb-5">
+        <div class="col-10 col-lg-6">
+          <table class="table table-hover table-striped mb-4">
             <thead>
               <tr>
                 <th scope="col">Titolo</th>
+                <th scope="col" class="d-none d-sm-block d-lg-block">
+                  Data prestito
+                </th>
                 <th scope="col">Stato</th>
                 <th scope="col">Azioni</th>
               </tr>
@@ -112,6 +115,7 @@
             <tbody>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -120,6 +124,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -128,6 +133,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">18/10/2023</td>
                 <td><span class="borrowed">In prestito</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -136,6 +142,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -144,6 +151,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="not-available">Non disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -152,6 +160,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -160,6 +169,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">21/09/2023</td>
                 <td><span class="borrowed">In prestito</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -168,6 +178,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -176,6 +187,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="not-available">Non disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -184,6 +196,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">25/07/2023</td>
                 <td><span class="borrowed">In prestito</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -192,6 +205,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -200,6 +214,7 @@
               </tr>
               <tr>
                 <td>I Pilastri Della Terra</td>
+                <td class="d-none d-sm-block d-lg-block">-</td>
                 <td><span class="available">Disponibile</span></td>
                 <td>
                   <button><i class="fa-solid fa-pencil"></i></button>
@@ -211,9 +226,9 @@
         </div>
 
         <!-- SEZIONE TODO -->
-        <div class="col-12 col-lg-4">
-          <div class="todo-div">
-            <div class="todo-title">
+        <div class="col-10 col-lg-4">
+          <div class="todo-div mb-4">
+            <div class="todo-title p-3">
               <h3>Todo</h3>
             </div>
             <div class="todo-list mt-3">
@@ -258,98 +273,89 @@
               </ul>
             </div>
           </div>
+
           <!-- SEZIONE FAQ -->
-          <div class="accordion mt-5" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+          <div class="accordion-div mb-5 d-flex flex-column">
+            <div class="accordion-title p-3">
+              <h3>F.A.Q.</h3>
+            </div>
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Come aggiungere un nuovo libro?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem numquam obcaecati dolores nostrum, accusantium magnam
+                    beatae nemo quasi cupiditate a excepturi nulla qui
+                    praesentium itaque sunt dolorem, animi ratione? Perferendis.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Come posso accedere all'anagrafica utenti?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit rem nostrum ullam et quae exercitationem
+                    ipsum? Reiciendis est ad porro nam explicabo vel. Ipsa odio
+                    rem aut expedita enim. Qui!
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Posso usare questa dashboard da mobile?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam aperiam magni placeat cumque obcaecati molestiae
+                    rerum, maiores nam laudantium porro ipsam iusto minima
+                    doloribus aliquid consequuntur eveniet ipsa est dolor!
+                  </div>
                 </div>
               </div>
             </div>

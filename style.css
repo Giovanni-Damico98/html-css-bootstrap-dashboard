@@ -71,7 +71,6 @@ header img {
 /* SEZIONE TO-DO */
 
 .todo-div {
-  padding: 15px;
   border-radius: 0.5rem;
   border: solid 2px lightgray;
 }
@@ -82,5 +81,19 @@ header img {
   border-bottom: solid 2px lightgrey;
 }
 
-.list-group {
+/* SEZIONE FAQ */
+
+.accordion-div {
+  border: solid 2px lightgray;
+  border-radius: 0.5rem;
+}
+
+.accordion-title {
+  background-color: lightgray;
+}
+
+/* ADD-BOOK.HTML */
+
+hr {
+  height: 2px;
 }
